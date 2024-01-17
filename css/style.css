@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*common css part*/
 *{
     margin: 0;
     padding: 0;
     outline: 0;
+    box-sizing: border-box;
+}
+.none{display: none;
 }
 /*menubar css part start*/
 #navbar{
@@ -16,6 +20,9 @@
     margin-bottom: 49px;
 }
 .nav_logo{
+    display: flex;
+}
+.nav_logo img{
     width: 48px;
     height: 56px;
     margin-right: 16px;
@@ -44,7 +51,6 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
     margin-right: 40px;
     text-decoration: none;
     transition: all linear.3s;
@@ -59,6 +65,7 @@
     margin: 0 auto;
     background-repeat: no-repeat;
     border-radius: 16px;
+    background-size: cover;
     padding-bottom: 100px; 
     margin-bottom: 100px;
 }
@@ -71,8 +78,6 @@
     padding-top: 100px;
 }
 .banner_text p{
-    width: 600px;
-    height: 50px;
     color: #FFF;
     text-align: center;
     font-family: 'Mulish', sans-serif;
@@ -80,7 +85,6 @@
     font-weight: 400;
     line-height: 26px;
     padding-top: 24px;
-    padding-left: 300px;
     padding-bottom: 48px;
 }
 .banner_back{
@@ -132,8 +136,6 @@
     margin: 0 auto;
 }
 .popular_text h2{
-    width: 375px;
-    height: 50px;
     color: #131318;
     text-align: center;
     font-family: 'Mulish', sans-serif;
@@ -142,8 +144,6 @@
     padding-bottom: 10px;
 }
 .popular_text p{
-    width: 575px;
-    height: 52px;
     color: rgba(19, 19, 24, 0.70);
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
@@ -152,8 +152,6 @@
     margin-top: 10px;
 }
 .popular_text ul li p{
-    width: 525px;
-    height: 52px;
     color: rgba(19, 19, 24, 0.70);
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
@@ -162,13 +160,12 @@
     padding-bottom: 20px;
 }
 .popular_last p{
-    width: 530px;
     color: #5A5A5D;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    margin-top: 58px;
+    margin-top: 20px;
     margin-bottom: 24px;
 }
 .popular_button button{
@@ -183,16 +180,13 @@
     font-weight: 800;
     border: none;
     cursor: pointer;
-    margin-bottom: 100px;
 }
 .popular_main{
     display: flex;
+    gap: 24px;
 }
 .popular_image{
-    width: 540px;
-    height: 550px;
     border-radius: 16px;
-    margin-left: 70px;
 }
 /*destination css part start*/
 #destination{
@@ -206,22 +200,22 @@
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 24px;
+    text-align: center;
 }
 .destination_text p{
-    width: 643px;
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
-    padding-left: 265px;
+    text-align: center;
     margin-bottom: 48px;
 }
 .grid_item{
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(3,1fr);
+    gap: 24px;
 }
 .grid_item img{
     width: 100%;
@@ -234,19 +228,19 @@
     grid-column: 7/span 12;
 }
 .grid_image_3{
-    grid-column: 1/span 4;
+    grid-column: 1/span 3;
 }
 .grid_image_4{
-    grid-column: 5/span 9;
+    grid-column: 4/span 6;
 }
 .grid_image_5{
-    grid-column: 10/span 12;
+    grid-column: 10/span 3;
 }
 .grid_image_6{
-    grid-column: 1/span 4;
+    grid-column: 1/span 5;
 }
 .grid_image_7{
-    grid-column: 5/span 12;
+    grid-column: 6/span 7;
 }
 /*choose us css part start*/
 #choose{
@@ -261,17 +255,16 @@
     font-weight: 800;
     margin-top: 100px;
     margin-bottom: 24px;
+    text-align: center;
 }
 .choose_text p{
-    width: 643px;
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
-    padding-left: 280px;
-    padding-bottom: 48px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 .card_section{
     display: flex;
@@ -279,8 +272,6 @@
     margin-bottom: 24px;
 }
 .card_1{
-    width: 573px;
-    height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
@@ -300,7 +291,6 @@
     padding-top: 32px;
 }
 .card_1 p{
-    width: 486px;
     color: #5A5A5D;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
@@ -310,8 +300,6 @@
     padding-top: 16px;
 }
 .card_2{
-    width: 573px;
-    height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
@@ -331,7 +319,6 @@
     padding-top: 32px;
 }
 .card_2 p{
-    width: 486px;
     color: #5A5A5D;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
@@ -341,8 +328,6 @@
     padding-top: 16px;
 }
 .card_3{
-    width: 573px;
-    height: 284px;
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
@@ -365,7 +350,6 @@
     padding-top: 32px;
 }
 .card_3 p{
-    width: 486px;
     color: #5A5A5D;
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
@@ -380,30 +364,331 @@
     margin: 0 auto;
 }
 .destination_text h2{
-    width: 575px;
-    height: 50px;
     color: #131318;
     font-family: 'Mulish', sans-serif;
     font-size: 40px;
     font-weight: 800;
+    text-align: center;
 }
 .destination_text p{
-    width: 575px;
-    height: 50px;
     color: rgba(19, 19, 24, 0.70);
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 26px;
-    padding-top: 36px;
-    padding-left: 5px;
+    text-align: center;
 }
 .destination_main{
     display: flex;
+    gap: 30px;
 }
 .destination_image{
-    padding-left: 90px;
+    margin-bottom: 100px;
 }
+/*subscribe css part start*/
+#subscribe{
+    width: 1195px;
+    margin: 0 auto
+}
+.subscribe_main{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+.letter{
+    width: 40%;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+.letter h4{
+    color: #131318;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 16px;
+}
+.letter p{
+    color: #5A5A5D;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.letter input{
+    width: 100%;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    padding: 16px 20px;
+    margin-top: 16px;
+}
+.letter ::placeholder{
+    color: rgba(19, 19, 24, 0.30);
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.subscribe_button button{
+    width: 100%;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    border: none;
+    margin-top: 16px;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+}
+.subscribe_image{
+   background: url(../Images/Rectangle\ 8\ \(1\).png);
+   width: 56%;
+   background-repeat: no-repeat;
+   border-radius: 16px;
+}
+.subs_text{
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    position: relative;
+    top: 57%;
+    left: 51%;
+}
+.subs_text h4{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 16px;
+}
+.subs_text h3{
+    color: #FFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 16px;
+}
+/*footer css part start*/
+#footer{
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+}
+.footer_text{
+    padding-top: 110px;
+    display: flex;
+    margin-left: 500px;
+}
+.footer_logo img{
+    width: 40px;
+    height: 46px;
+    margin-right: 16px;
+}
+.footer_text h3{
+    color: #131318;
+    font-family: 'Mulish', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+
+}
+.footer_text span{
+    color: #FF5400;
+    font-family: 'Mulish', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+.footer_para p{
+    color: #5A5A5D;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.line{
+    height: 1px;
+    margin: 0 auto;
+    background: rgba(19, 19, 24, 0.10);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.copyright{
+    color: #131318;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 110px;
+}
+
+/*responsive css part start*/
+@media screen and (max-width:576px){
+    .nav_title{
+        flex-direction: column;
+    }
+    #navbar{
+        width:100%
+    }
+    #banner{
+        width: 100%
+    }
+    .banner_text h2{
+        font-size: 22px;
+    }
+    .banner_text p{
+        font-size: 14px;
+    }
+    .banner_back{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .nav_title h3{
+        font-size: 22px;
+    }
+    .nav_title span{
+        font-size: 22px;
+    }
+    #tour{
+        width: 100%;
+    }
+    .popular_main{
+        flex-direction: column;
+    }
+    .popular_text h2{
+        font-size: 20px;
+    }
+    .popular_text p{
+        font-size: 14px;
+    }
+    .popular_image{
+        width: 100%;
+    }
+    .popular_button button{
+        font-size: 20px;
+    }
+    #destination {
+        width: 100%;
+    }
+    .destination_text h2{
+        font-size: 20px;
+        margin-top: 24px;
+    }
+    .destination_text p{
+        font-size: 14px;
+    }
+    #choose{
+        width: 100%;
+    }
+    .choose_text h2{
+        font-size: 20px;
+    }
+    .choose_text p{
+        font-size: 14px;
+    }
+    .card_section{
+        flex-direction: column;
+    }
+    .card_1{
+        width: 100%;
+    }
+    .card_1 h4{
+        font-size: 20px;
+    }
+    .card_1 p{
+        width: 100%;
+        font-size: 14px;
+    }
+    .card_2{
+        width: 100%;
+    }
+    .card_2 h4{
+        font-size: 20px;
+    }
+    .card_2 p{
+        width: 100%;
+        font-size: 14px;
+    }
+    #selected_destination{
+        width: 100%;
+    }
+    .destination_main{
+        flex-direction: column;
+    }
+    #footer{
+        width: 100%;
+    }
+    .footer_para p{
+        font-size: 14px;
+    }
+    .line{
+        width: 100%;
+    }
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
